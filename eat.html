@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      background-image: url("https://i.pinimg.com/236x/11/da/7e/11da7ed806b463c514c86b94141a58e4.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header {
+      text-align: center;
+      padding: 32px;
+      color: white;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+      justify-content: center;
+    }
+
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+      margin-bottom: 16px;
+      transition: transform 0.3s ease-in-out; /* Zoom-in effect */
+    }
+
+    /* Image Styling */
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      opacity: 0;
+      animation: fadeIn 1s forwards; /* Fade-in animation */
+      transition: transform 0.3s ease-in-out; /* Smooth transition for zoom */
+    }
+
+    .column img:hover {
+      transform: scale(1.1); /* Slight zoom effect */
+    }
+
+    .column:hover {
+      transform: scale(1.05); 
+    }
+
+    @media screen and (max-width: 800px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>FOOD AND DRINK</h1>
+  </div>
+
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="C:\Users\HP\Downloads\makan2.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan7.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan1.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan14.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="C:\Users\HP\Downloads\makan3.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan4.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan5.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan6.jpg" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="C:\Users\HP\Downloads\makan9.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan10.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan11.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan15.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="C:\Users\HP\Downloads\makan12.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan13.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan8.jpg" style="width:100%">
+      <img src="C:\Users\HP\Downloads\makan17.jpg" style="width:100%">
+    </div>
+  </div>
+
+</body>
+</html>

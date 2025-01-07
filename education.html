@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+  animation: fadeInBody 2s ease-in-out;
+}
+
+/* Fade-in animation for the body */
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeInMain 2s ease-in-out;
+}
+
+/* Fade-in animation for the main content */
+@keyframes fadeInMain {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  animation: fadeInText 2s ease-in-out;
+}
+
+/* Fade-in effect for header */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that float next to each other */
+.column {
+  float: left;
+  width: 25%;
+  animation: slideUp 1.5s ease-out;
+}
+
+/* Slide-up animation for each column */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  animation: fadeInContent 1s ease-in-out;
+}
+
+/* Fade-in animation for content */
+@keyframes fadeInContent {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover effect on images */
+.column:hover .content img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MY EDUCATION JOURNEY</h1>
+<hr>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="C:\Users\HP\Downloads\TADIKA.jpg" alt="Mountains" style="width:100%">
+      <h3>SRI INTELEK</h3>
+      <p>2010</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\HP\Downloads\RENDAH.jpg" alt="Lights" style="width:100%">
+      <h3>SK COCHRANE PERKASA</h3>
+      <p>2011-2016</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\HP\Downloads\MENENGAH.jpg" alt="Nature" style="width:100%">
+      <h3>SMK COCHRANE PERKASA</h3>
+      <p>FORM 1 TO FORM 5</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\HP\Downloads\UITM.jpg" alt="Mountains" style="width:100%">
+      <h3>UNIVERSITI TEKNOLOGI MARA, SEGAMAT JOHOR</h3>
+      <p>Diploma In Information Management</p>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <img src="https://www.brainyquote.com/photos_tr/en/e/elizabethwarren/690801/elizabethwarren1.jpg" alt="quote" style="width:100%">
+</div>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>

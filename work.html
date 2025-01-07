@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeeaea;
+  padding: 20px;
+  font-family: Arial;
+  animation: fadeInBody 2s ease-in-out;
+}
+
+/* Fade-in animation for the body */
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeInMain 2s ease-in-out;
+}
+
+/* Fade-in animation for the main content */
+@keyframes fadeInMain {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  animation: fadeInText 2s ease-in-out;
+}
+
+/* Fade-in effect for header */
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  color: rgb(71, 88, 112);
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  animation: slideUp 1.5s ease-out;
+}
+
+/* Slide-up animation for each column */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: rgb(156, 164, 177);
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Hover effect on images */
+.column:hover .content img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>INTERNSHIP EXPERIENCE</h1>
+<hr>
+
+<h2>At Koperasi Polis</h2>
+
+<h2>SOFT SKILLS</h2>
+<p>Communication</p>
+<p>Time Management</p>
+<p>Empathy</p>
+
+<h2>HARD SKILLS</h2>
+<p>Project Management</p>
+<p>Coding Ability</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="C:\Users\HP\Downloads\intern.jpg" alt="intern" style="width:100%">
+      <h3>INTERNSHIP</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\HP\Downloads\intern2.jpg" alt="Teamwork" style="width:100%">
+      <h3>TEAM WORK</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\HP\Downloads\intern3.jpg" alt="Teaching" style="width:100%">
+      <h3>TEACHING</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\HP\Downloads\intern4.jpg" alt="Colleagues" style="width:100%">
+      <h3>COLLEAGUES</h3>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
