@@ -16,9 +16,9 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #334a4e;
-  width: 100%; /* Full width */
+  width: 100%;
   display: flex;
-  justify-content: center; /* Center links horizontally */
+  justify-content: center;
 }
 
 .navbar a {
@@ -26,7 +26,8 @@ body {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
-  transition: background-color 0.3s ease; 
+  background-color: #334a4e; /* Ensure background is visible */
+  transition: background-color 0.3s ease;
 }
 
 .navbar a:hover {
@@ -36,13 +37,13 @@ body {
 /* Social media card container */
 .column {
   display: inline-block;
-  width: 300px; /* Fixed width for better alignment */
-  margin: 16px auto; /* Center-align cards */
+  width: 300px;
+  margin: 16px auto;
 }
 
 .card {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 15px; /* Rounded corners */
+  border-radius: 15px;
   overflow: hidden;
   margin: auto;
   background-color: #f8f8f8;
@@ -50,18 +51,18 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.05); /* Slightly enlarge card */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
   width: 100%;
   border-bottom: 3px solid #334a4e;
-  transition: transform 0.3s ease; /* Zoom effect */
+  transition: transform 0.3s ease;
 }
 
 .card img:hover {
-  transform: scale(1.1); /* Zoom in the image */
+  transform: scale(1.1);
 }
 
 .card h2 {
@@ -72,18 +73,18 @@ body {
 
 .card a {
   display: inline-block;
-  background-color: #334a4e; /* Button color */
+  background-color: #334a4e;
   color: white;
   padding: 12px 25px;
-  border-radius: 30px; /* Rounded button */
+  border-radius: 30px;
   text-decoration: none;
   font-size: 16px;
   margin: 15px 0;
-  transition: background-color 0.3s ease; /* Smooth button hover */
+  transition: background-color 0.3s ease;
 }
 
 .card a:hover {
-  background-color: rgb(160, 91, 91); /* Hover effect */
+  background-color: rgb(160, 91, 91);
 }
 
 /* Clock styles */
@@ -105,9 +106,10 @@ div.scroll-container {
 
 div.scroll-container img {
   padding: 8px;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 650px) {
   .navbar a {
     font-size: 14px;
